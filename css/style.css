@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css untuk header dan navigasi */
+header {
+    background-color: #8cbcd0;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+
+}
+
+.nav-list li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.nav-list li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+li a .active,
+li a:hover {
+    border: 1px solid white;
+    transition: 1.2s;
+}
+
+.nav-list span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    background-color: #ea907a;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.nav-list span:hover {
+    transition: .5s;
+    background-color: #ffcb74;
+
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu_toggle {
+    display: none;
+}
+
+/* -------------------------------------------- */
+/* css untuk konten home */
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px 100px;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+section .bg {
+    margin-top: 180px;
+    max-width: 700px;
+    float: left;
+}
+
+#home .container {
+    padding-left: 100px;
+    width: 100%;
+
+}
+
+#home .container h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 80px;
+    color: #f8b195;
+}
+
+#home .container h1 span {
+    font-family: 'Niconne', cursive;
+    color: #f2727f;
+}
+
+#home .container p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+#home .container .span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 20px;
+    background-color: #ea907a;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+#home .container .span:hover {
+    background-color: #ffcb74;
+    transition: all .5s ease-in-out;
+}
+
+/* css content market */
+#market {
+    position: relative;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    height: auto;
+
+}
+
+#market h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    color: #f2727f;
+}
+
+#market h1 {
+    color: #ea907a;
+    font-family: 'Roboto', sans-serif;
+    border: 1px;
+
+
+}
+
+/* form search css */
+
+
+input[type=text] {
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    border: 2px solid rgb(240, 230, 230);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('/img/icon/searchicon.png');
+    background-position: 10px 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+
+}
+
+input[type=text]:focus {
+    width: 80%;
+
+}
+
+/* css untuk list item */
+.card-box {
+    margin: auto;
+    padding: 30px;
+
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+    margin-top: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f5f6fa;
+
+
+}
+
+.card h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #353b48;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.card p {
+    line-height: 40px;
+}
+
+
+
+.card-box .row .column span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #ea907a;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-box .row .column span:hover {
+    transition: .5s;
+    background-color: #ffcb74;
+
+}
+
+#market .container span {
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #ea907a;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+
+#about {
+
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    text-align: center;
+    top: 100px;
+    margin-top: 70px;
+
+}
+
+#about h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #18b0b0;
+}
+
+#about h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+#about .container {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    border: 1px;
+    padding: 20px;
+    background-color: #383e56;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.patner-box .row .column img {
+    width: 20%;
+    padding-bottom: 30px;
+}
+
+
+/* contact css */
+
+#contact .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+
+    padding: 25px;
+
+
+}
+
+#contact h3 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #09C;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+/* css untuk footer */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #636e72;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 2%;
+}
+
+
+
+.imgfooter {
+
+    width: 30px;
+    height: auto;
+
+}
+
+.imgfoot {
+    top: 100px;
+    width: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer .list-footer {
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 2%;
+
+
+}
+
+.list-footer ul {
+    list-style: none;
+}
+
+.list-footer li {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* form login css */

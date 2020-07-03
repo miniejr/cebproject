@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Source+Sans+Pro:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <title>D'Titip Aja</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <img src="/img/logo.png">
+            </div>
+            <ul class="nav-list">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#market">Market</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Hubungi Kami</a></li>
+                <li><span>Login</span></li>
+            </ul>
+
+            <div class="menu_toggle" onclick="toggle()">
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="container">
+            <!-- animasi sederhana -->
+
+            <h1 class="animate__animated animate__bounce animate__repeat-3">D'TITIP <span>Aja</span></h1>
+            <p>pengen beli sesuatu, tapi gak ada dimarketplace Indonesia, bingung cara belanja di luar negeri, dan gak
+                mau ribet,D'titipin aja.</p>
+            <span class="span" onclick="window.location.href='#market';">Selengkapnya</span>
+        </div>
+        <img src="img/bg.png" class="bg">
+    </section>
+
+    <div id="market">
+        <div class="container">
+
+            <h1>Mau titip apa ?</h1>
+            <h4>Masukan link barang yang kamu mau.</h4>
+
+            <input type="text" name="search"
+                placeholder="ex:https://www.example.com/Wyze-Indoor-Wireless-Detection-Assistant/dp/B076H3SRXG/ref=sr_1_1?dchild=1&fst=as%3Aoff&pf_rd_i=16225009011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=82d03e2f-30e3-48bf-a811-d3d2a6628949&pf_rd_r=RH0S988DQ7RDJ0AEV2HW&pf_rd_s=merchandised-search-4&pf_rd_t=101&qid=1486423355&refinements=p_n_shipping_option-bin%3A3242350011&rnid=493964&s=electronics&sr=1-1"
+                class="icon-search">
+            <div class="search"></div>
+            <div class="card-box">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/produk2.jpg" alt="Denim Jeans">
+                            <h1> headphone</h1>
+                            <p class="price">Rp.400.000</p>
+                            <span>Titip Aja</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/produk3.jpg" alt="Denim Jeans">
+                            <h1>Coco oil</h1>
+                            <p class="price">Rp.400.000</p>
+                            <span>Titip Aja</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/produk4.jpg" alt="Denim Jeans">
+                            <h1>vib shampo</h1>
+                            <p class="price">Rp.200.000</p>
+                            <span>Titip Aja</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/produk9.jpg" alt="Denim Jeans">
+                            <h1>man style</h1>
+                            <p class="price">Rp.1.400.000</p>
+                            <span>Titip Aja</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/produk8.jpg" alt="Denim Jeans">
+                            <h1>Playstation 4</h1>
+                            <p class="price">Rp.4.400.000</p>
+                            <span>Titip Aja</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/produk6.jpg" alt="Denim Jeans">
+                            <h1>Nike shoes</h1>
+                            <p class="price">Rp.400.000</p>
+                            <span>Titip Aja</span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="img/produk5.jpg" alt="Denim Jeans">
+                            <h1>Sunglass cool</h1>
+                            <p class="price">Rp.1.300.000</p>
+                            <span>Titip Aja</span>
+                        </div>
+                    </div>
+                </div>
+                <span>Load More</span>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h1>TENTANG KAMI</h1>
+        <div class="container">
+            <h2>D'titip aja Berawal dari pemuda yang biasanya sering membantu membelikan barang
+                teman-temannya.
+            </h2>
+            <p>Kami
+                adalah platform end to end yang membantu kamu beli, bayar dan kirim barang titipan kamu dari semua
+                situs
+                e-commerce diseluruh belahan dunia hingga sampai kerumah kamu dengan cepat, murah dan
+                transparan. Dalam layanan end to end D'titip aja kamu tinggal terima beres! semua dikerjakan oleh
+                tim d'titip aja.</p>
+        </div>
+        <h3>Patner kami</h3>
+        <div class="patner-box">
+            <div class="row">
+                <div class="column">
+                    <img src="/img/icon/1.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/3.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/4.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/5.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/6.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/7.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/8.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/11.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/12.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/9.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/2.png">
+                </div>
+                <div class="column">
+                    <img src="/img/icon/10.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <form id="contact" action="" method="post">
+                <h3>Hubungi Kami</h3>
+                <h4>24 jam, tim kami akan melayani anda</h4>
+                <fieldset>
+                    <input placeholder="Nama " type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Email" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="No telp" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Ketik pesan...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Kirim</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <img src="./img/logo.png" class="imgfooter" alt="imgfooter">
+        <div class="list-footer">
+            <ul>
+                <li><img class="imgfoot" src="./img/icon/fb.png" alt="fb"></li>
+                <li><img class="imgfoot" src="./img/icon/ig.png" alt="ig"></li>
+                <li><img class="imgfoot" src="./img/icon/twit.png" alt="tw"></li>
+                <li><img class="imgfoot" src="./img/icon/ytb.png" alt="yt"></li>
+        </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
